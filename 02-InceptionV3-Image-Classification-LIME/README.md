@@ -32,6 +32,10 @@ Running `explain_instance` with `num_samples=1000` means the model gets called 1
 
 Python, TensorFlow/Keras, InceptionV3 (pretrained on ImageNet), LIME, scikit-image, matplotlib, NumPy
 
+Interface
+
+Built a Gradio interface (app.py) that wraps the full pipeline — upload an image, get the top-5 prediction and all four LIME visualizations back in one screen. Tested and working via Gradio's local/shareable link. Not currently deployed to a permanent host, since Hugging Face Spaces now requires a paid plan to run Gradio apps on standard compute; the free option (ZeroGPU) is available but adds setup complexity not worth it for this project's scope right now.
+
 
 ## Credits
 

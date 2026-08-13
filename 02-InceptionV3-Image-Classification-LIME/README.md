@@ -32,9 +32,6 @@ Running `explain_instance` with `num_samples=1000` means the model gets called 1
 
 Python, TensorFlow/Keras, InceptionV3 (pretrained on ImageNet), LIME, scikit-image, matplotlib, NumPy
 
-## Next step
-
-Planning to wrap this pipeline in a Gradio interface so anyone can upload an image and see the prediction + all four LIME visualizations directly, without running the notebook. Not yet built/tested — will update this README once it's live.
 
 ## Credits
 

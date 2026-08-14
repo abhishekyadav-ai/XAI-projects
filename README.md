@@ -13,6 +13,8 @@ Most of my other projects focus on building and training models. This one flips 
 | # | Project | Technique | Dataset |
 |---|---------|-----------|---------|
 | 01 | [Quora Insincere Questions](./01-Quora-Insincere-Questions-LIME) | LIME | [Quora Insincere Questions Classification](https://www.kaggle.com/competitions/quora-insincere-questions-classification) |
+| 02 | [InceptionV3 Image Classification](./02-InceptionV3-Image-Classification-LIME) | LIME | ImageNet (via pretrained InceptionV3) |
+| 03 | [Iris Classification](./03-Iris-Classification-LIME) | LIME | [Iris](https://scikit-learn.org/stable/datasets/toy_dataset.html#iris-dataset) (via `sklearn.datasets`) |
 
 More projects will be added here as I explore other techniques (SHAP, permutation importance, etc.).
 

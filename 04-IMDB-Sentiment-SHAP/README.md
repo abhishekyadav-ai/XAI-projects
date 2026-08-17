@@ -43,6 +43,7 @@ shap_values = explainer(short_data[:2])
 #   2   = number of output classes (NEGATIVE, POSITIVE)
 
 # 4. Visualize word-level contributions toward the POSITIVE class
+```
 shap.plots.text(shap_values[:, :, "POSITIVE"])
 ```
 

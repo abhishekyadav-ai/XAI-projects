@@ -43,16 +43,15 @@ shap_values = explainer(short_data[:2])
 #   2   = number of output classes (NEGATIVE, POSITIVE)
 
 # 4. Visualize word-level contributions toward the POSITIVE class
-```
+
 shap.plots.text(shap_values[:, :, "POSITIVE"])
 ```
 
-**What `shap.plots.text` actually shows:** each word in the review is highlighted — red words pushed the prediction *toward* POSITIVE, blue words pushed it *toward* NEGATIVE. The intensity of the color shows how strong that word's influence was. Hovering/clicking on a word (in the notebook) reveals its exact contribution value.
+**What `shap.plots.text` actually shows:** each word in the review is highlighted — red words pushed the prediction *toward* POSITIVE, blue words pushSed it *toward* NEGATIVE. The intensity of the color shows how strong that word's influence was. Hovering/clicking on a word (in the notebook) reveals its exact contribution value.
 
 ## Plot
-![alt text](shap_text_plot.png)
 
-```
+![SHAP text plot](shap_text_plot.png)
 
 ## What I learned / observations
 

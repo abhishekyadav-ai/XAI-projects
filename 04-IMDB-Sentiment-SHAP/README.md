@@ -49,11 +49,8 @@ shap.plots.text(shap_values[:, :, "POSITIVE"])
 **What `shap.plots.text` actually shows:** each word in the review is highlighted — red words pushed the prediction *toward* POSITIVE, blue words pushed it *toward* NEGATIVE. The intensity of the color shows how strong that word's influence was. Hovering/clicking on a word (in the notebook) reveals its exact contribution value.
 
 ## Plot
+![alt text](shap_text_plot.png)
 
-*(Paste a screenshot of the `shap.plots.text` output here once you have it — the plot itself is interactive HTML/JS, so it won't render as a static image directly from the notebook output; a screenshot is the easiest way to preserve it in this README.)*
-
-```
-![SHAP text plot](./images/shap_text_plot.png)
 ```
 
 ## What I learned / observations

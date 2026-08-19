@@ -18,6 +18,7 @@ Most of my other projects focus on building and training models. This one flips 
 | 04 | [IMDB Sentiment Classification](./04-IMDB-Sentiment-SHAP) | DistilBERT (pretrained sentiment pipeline) | SHAP | Text | [IMDB Movie Reviews](https://huggingface.co/datasets/stanfordnlp/imdb) |
 | 05 | [ImageNet Classification](./05-ImageNet-Classification-SHAP) | ResNet50 (pretrained) | SHAP | Image | ImageNet (via `shap.datasets.imagenet50`) |
 | 06 | [Adult Income Classification](./06-Adult-Income-SHAP) | XGBoost | SHAP | Tabular | [Adult Census Income](https://archive.ics.uci.edu/dataset/2/adult) (via `shap.datasets.adult`) |
+| 07 | [Stroke Prediction Counterfactuals](./07-Stroke-Prediction-Counterfactuals-DiCE) | Random Forest | Counterfactuals (DiCE) | Tabular | [Healthcare Stroke Prediction](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset) |
 
 **A quick way to read this table:** each row pairs one *data type* (text, image, or tabular) with one *XAI technique* (LIME or SHAP). Projects 01–03 use LIME, 04–06 use SHAP — same three data types, covered twice, once per technique. That pairing is intentional: it makes it easy to compare how the same method behaves across very different kinds of data, and how the two techniques differ from each other on the same kind of data.
 
@@ -71,6 +72,11 @@ XAI-projects/
     ├── shap_force_stacked.png
     ├── shap_summary_bar.png
     └── shap_summary_beeswarm.png
+│
+└── 07-Stroke-Prediction-Counterfactuals/
+    ├── README.md
+    └── stroke_prediction_counterfactuals.ipynb
+
 ```
 
 Each project folder is self-contained — its own notebook, its own README (with the detailed write-up: dataset, model, explainer code, plots, and learnings), and its own images.
